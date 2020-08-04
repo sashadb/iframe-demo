@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Storymap Prototype</title>
     <link rel="stylesheet" href="assets/css/foundation.css">
+  <script src="assets/js/modernizr-custom.js"></script>
   </head>
 <body>
 <div style = "background:#6fa834;">
@@ -21,15 +22,33 @@
     </div>
   </div>
 
-HTML
-<ul class="tabs" data-tab role="tablist">
-  <li class="tab-title active" role="presentation"><a href="#panel2-1" role="tab" tabindex="0" aria-selected="true" aria-controls="panel2-1">Tab 1</a></li>
-  <li class="tab-title" role="presentation"><a href="#panel2-2" role="tab" tabindex="0" aria-selected="false" aria-controls="panel2-2">Tab 2</a></li>
-  <li class="tab-title" role="presentation"><a href="#panel2-3" role="tab" tabindex="0" aria-selected="false" aria-controls="panel2-3">Tab 3</a></li>
-  <li class="tab-title" role="presentation"><a href="#panel2-4" role="tab" tabindex="0" aria-selected="false" aria-controls="panel2-4">Tab 4</a></li>
-</ul>
+
+
+<h4 id="tabs">Tabs</h4>
+
+<dl class="tabs" data-tab="">
+  <dd class="active"><a href="#panel2-1" aria-selected="true" tabindex="0">Tab 1</a></dd>
+  <dd class=""><a href="#panel2-2" aria-selected="false" tabindex="0">Tab 2</a></dd>
+  <dd class=""><a href="#panel2-3" aria-selected="false" tabindex="0">Tab 3</a></dd>
+  <dd class=""><a href="#panel2-4" aria-selected="false" tabindex="0">Tab 4</a></dd>
+</dl>
+
 <div class="tabs-content">
-  <section role="tabpanel" aria-hidden="false" class="content active" id="panel2-1">
+  <div class="content active" id="panel2-1" aria-hidden="false">
+    <p>First panel content goes here...</p>
+  </div>
+  <div class="content" id="panel2-2" aria-hidden="true">
+    <p>Second panel content goes here...</p>
+  </div>
+  <div class="content" id="panel2-3" aria-hidden="true">
+    <p>Third panel content goes here...</p>
+  </div>
+  <div class="content" id="panel2-4" aria-hidden="true">
+    <p>Fourth panel content goes here...</p>
+  </div>
+</div>
+
+
       <div class="grid-container">
 
 
@@ -51,20 +70,7 @@ HTML
       </div>
 
     </div>
-    </div>
-
-  </section>
-  <section role="tabpanel" aria-hidden="true" class="content" id="panel2-2">
-    <h2>Second panel content goes here...</h2>
-  </section>
-  <section role="tabpanel" aria-hidden="true" class="content" id="panel2-3">
-    <h2>Third panel content goes here...</h2>
-  </section>
-  <section role="tabpanel" aria-hidden="true" class="content" id="panel2-4">
-    <h2>Fourth panel content goes here...</h2>
-  </section>
-</div>
-
+    
 
 
 
